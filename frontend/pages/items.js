@@ -1,8 +1,3 @@
-const Shop = () => (
-    <div>
-        <h1>Shop</h1>
-    </div>
-)
+import Home from "./index";
 
-export default  Shop;
-
+export default Home;
