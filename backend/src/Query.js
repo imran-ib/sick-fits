@@ -6,7 +6,8 @@ const { forwardTo } = require("prisma-binding");
 // ──────────────────────────────────────────────────────────────────────────────
 // we can forward this to prisma binding only if we do not want to change anything
 const Query = {
-  items: forwardTo("db")
+  items: forwardTo("db"),
+  item: forwardTo("db")
 };
 //
 // ─── OR WE CAN USE OUR OWN WAY ──────────────────────────────────────────────────

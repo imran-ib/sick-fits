@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import PriceTag from "./../styles/PriceTag";
 import Title from "./../styles/Title";
 import ItemStyles from "./../styles/ItemStyles";
 import Link from "next/link";
 import FormateMoney from "../../lib/formatMoney";
+import DeleteButton from "./../utills/DeleteButton";
+
 export class Item extends Component {
   static propTypes = {};
 
@@ -38,7 +39,7 @@ export class Item extends Component {
             <a>Add To Cart</a>
           </button>
           <button>
-            <a>Delete</a>
+            <DeleteButton id={item.id}>Delete This Item</DeleteButton>
           </button>
         </div>
       </ItemStyles>

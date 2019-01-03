@@ -26,6 +26,7 @@ const ListItem = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-gap: 60px;
   max-width: ${props => props.theme.maxWidht};
+  margin: 0 auto;
 `;
 
 export default class Items extends Component {
@@ -49,3 +50,4 @@ export default class Items extends Component {
     );
   }
 }
+export { ALL_ITEMS_QUERY };
